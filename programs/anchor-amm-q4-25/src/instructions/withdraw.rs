@@ -109,7 +109,6 @@ impl<'info> Withdraw<'info> {
             .checked_div(lp_supply)
             .ok_or(AmmError::Underflow)?;
 
-        // keep account for slippage error
         require!(
             token_x >= min_x && token_y >= min_y,
             AmmError::SlippageExceeded

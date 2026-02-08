@@ -105,7 +105,6 @@ impl<'info> Swap<'info> {
 
         self.withdraw_tokens(is_x, swap_out)?;
 
-        // method calls
         Ok(())
     }
 

@@ -12,7 +12,6 @@ import {
 import { PublicKey } from "@solana/web3.js";
 
 describe("anchor-amm", () => {
-  // Configure the client to use the local cluster.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
