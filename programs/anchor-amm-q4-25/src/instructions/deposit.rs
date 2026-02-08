@@ -90,7 +90,7 @@ impl<'info> Deposit<'info> {
             }
         };
 
-        require!(x <= max_x && y <= max_y, AmmError::SlippageExceeded);
+        require!(x <= max_x && y <= max_y, AmmError::SlippageExceeded); // This is an important filter for lp_tokens check
 
         // deposit token x
         self.deposit_tokens(true, x)?;
